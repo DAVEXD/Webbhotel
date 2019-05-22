@@ -1,0 +1,112 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "header header" "section aside" "footer footer";
+  grid-gap: 2px;
+}
+
+header {
+  color: inherit;
+  background-color: inherit;
+  grid-area: header;
+}
+
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: white;
+  background-color: inherit;
+}
+
+a{
+  color: white;
+}
+
+div.a {
+  text-align: center;
+}
+
+ul {
+  color: white;
+}
+
+nav {
+  background-color: inherit;
+  grid-area: nav;
+}
+
+section {
+  grid-area: section;
+  float: right;
+  color: white;
+}
+
+article {
+  background-color: inherit;
+  grid-area: article;
+  background-position: center;
+}
+
+aside {
+  background-color: inherit;
+  grid-area: aside;
+}
+
+footer {
+  color: white;
+  background-color: inherit;
+  grid-area: footer;
+  height: 20px
+}
+
+@media screen and (max-width:600px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "section section" "aside aside" "footer footer";
+    grid-gap: 1em 2em;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+img#logo {
+  width: 20%;
+}
+
+
+
+iframe{
+  width: 70%;
+  height: 500px;
+}
